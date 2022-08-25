@@ -35,7 +35,7 @@
 </div>
     </div>
   </div>
-  
+
   <div class="footer pre">
       <footer>
       <div class="row">
@@ -65,10 +65,17 @@
         <%= render Layout::SocialComponent.new %>
         
       </div>
+      
+      
+    <ul class="no-bullet inline-block">
+    <li class="inline-block"><strong class="privacy"><%= link_to t("layouts.footer.privacy"), page_path("privacy") %>&nbsp;</strong></li>
+    <li class="inline-block"><strong class="privacy"><%= link_to t("layouts.footer.conditions"), page_path("conditions") %>&nbsp;</strong></li>
+    <li class="inline-block"><strong class="privacy"><%= link_to t("layouts.footer.accessibility"), page_path("accessibility") %></strong></li>
+  </ul>
+  
+  
+  </div>
     </footer>
-
-
-
 
 
 
@@ -86,15 +93,12 @@
                 <img class="logofooter2" src="https://transparencia.archena.es/img/logo_ogovsystem_blanco-100-es.png" alt="logo-Ogovsystem">
             </a>
         </div>
+        
         </div>
         
         <div class="col-lg-5 secundary">
             <%= t("layouts.footer.copyright", year: Time.current.year) %>&nbsp;|
-            <ul class="no-bullet inline-block">
-              <li class="inline-block"><%= link_to t("layouts.footer.privacy"), page_path("privacy") %>&nbsp;|</li>
-              <li class="inline-block"><%= link_to t("layouts.footer.conditions"), page_path("conditions") %>&nbsp;|</li>
-              <li class="inline-block"><%= link_to t("layouts.footer.accessibility"), page_path("accessibility") %></li>
-            </ul>
+            
             <p class="info">
             <%= sanitize(t("layouts.footer.description",
               open_source: link_to(t("layouts.footer.open_source"), t("layouts.footer.open_source_url"), target: "blank", rel: "nofollow"),
