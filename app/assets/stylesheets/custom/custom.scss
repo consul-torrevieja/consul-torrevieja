@@ -177,10 +177,12 @@ footer a:hover, footer a:active:hover, footer a:focus:hover {
     text-decoration: none;
 } 
 ul.no-bullet, ol.no-bullet {
-    margin-left: 30%;
     padding-top: 20px;
 }
 .col-md-2.secundary {
     padding-left: 50%;
     margin-top: -10px;
+}
+.no-bullet.inline-block.privacy {
+    padding-left: 25%;
 }
