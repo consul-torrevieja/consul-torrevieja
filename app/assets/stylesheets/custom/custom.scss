@@ -1,7 +1,7 @@
 
 .public > .wrapper > header .top-bar, .proposal-dashboard > header .top-bar ::before {
 background-image: none;
-background-color: #006298;
+background-color: #FFFF;
 height: 90px;
 
 }
@@ -15,15 +15,33 @@ header {
         
 }
 .top-links {
-    background: #006298;
+    background:#ffc840; 
     height: 30px;
-    margin-bottom: -20px;
+    
 } 
+.top-bar ul{
+color:#000;
+} 
+.top-bar .menu > li .button {
+    color: #000;
+    background: #ffc840;
+    text-align: center;
+}
+.budget-phases .phase-title.current-phase-tab a {
+    background: #006837;
+}
+element {
+
+}
+.budget-header {
+
+    background-color: #006837;
+
+}
 #navigation_bar {
-    background-color: #006298;
+    background-color: #ffc840;
     font-family: "Montserrat";
     font-weight: 400;
-    padding-bottom: 10px;
     margin-right: -50px;
 }
 .container-logo-header {
@@ -33,30 +51,28 @@ header {
     text-transform: none;
     font-family: "Source Sans Pro";
     font-size: 18px;
-    padding: 0 0 3px 0;
-        padding-right: 0px;
-        padding-bottom: 5px;
-        padding-left: 0px;
-    margin: 0 10px 0 0;
+    padding: 10px;
     font-weight: 400;
-    
+    color:#000;
 
 }
 .subnavigation a:hover {
-    color: #F9F9F9;
-    background-color: transparent;
+    color: #fff;
+    background-color: #000;
     text-decoration: none;
-    border-bottom: 4px solid #EF60A3;
-    padding: 0 0 3px 0;
-        padding-right: 0px;
-        padding-bottom: 3px;
-        padding-left: 0px;
-    margin: 0 10px 0 0;
+    border-bottom: none;
+   padding: 10px;
     
    
 }
+.menu.simple li.is-active {
+    color: #ffc840;
+
+}
 .subnavigation a.is-active {
-    border-bottom: 4px solid #EF60A3;
+    color: #FFF;
+    text-decoration: none;
+    border: none;
 }
 .home-page.public {
     background-color: #F9F9F9;
@@ -91,12 +107,12 @@ header {
  
   padding: 16px 16px;
   border-bottom: none;
-  color:#EF60A3;
+  color:#333;
  
 }
 
 .jumbo.header-card {
-    background-color: #F9F9F9;
+    background-color: #efe3af;
 }
 .feed-content .proposal {
     margin-bottom: 0;
@@ -108,15 +124,21 @@ header {
     padding: 20px;
     float: left;
     margin-right: 1px;
-    border: 1px solid #92CFF2;
+    border: 1px solid #333;
     
 }
+#feed_proposals{
+    padding: 0px;
+}
+
+
 .feed-content .proposal:hover {
-    border: 1px solid #EF60A3;
+    border: 1px solid #ffc840;
 }
 
 .feed-content {
     background-color: #F9F9F9;
+    padding-left: 0px;
 }
 .home-page .card a:hover, .custom-page .card a:hover, .sdg-goal-show .card a:hover, .sdg-goals-index .card a:hover {
     box-shadow: none;
@@ -126,13 +148,13 @@ header {
     background-color: transparent;
 }
 .footer {
-    background: #006298;
+    background: #000;
     padding-bottom: 0px;
     margin-bottom: -55px;
     height: 250px;
 }
 .footer.pre {
-    background: #006298;
+    background: #333;
     border-bottom: 8px solid #EF60A3;
 }
 img {
@@ -142,20 +164,20 @@ img {
     display: inline-block;
     height: 60px;
     width: 60px;
-    border: 2px solid #EF60A3;
+    border: 2px solid #ffc840;
     border-radius: 120px;
     padding-top: 15px;
     margin-right: 20px;
 }
 .social a:hover {
-    color: #EF60A3;
+    color: #ffc840;
     background-color: transparent;
 }
 
 .footer.secundario {
     height: 80px;
     padding-top: 10px;
-    background: #EF60A3;
+    background: #b2b2b2;
 
 } 
 footer a {
@@ -167,7 +189,7 @@ footer a:hover, footer a:active:hover, footer a:focus:hover {
 }
 .col-lg-5.secundary {
     padding-left: 10%;
-    color: deeppink;
+    color: #f333;
 }
 .privacy {
     color: #fff;
@@ -185,4 +207,61 @@ ul.no-bullet, ol.no-bullet {
 }
 .no-bullet.inline-block.privacy {
     padding-left: 25%;
+}
+.header-title-container
+{
+    color:#FFF;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 6px 0px #333;
+   
+}
+.lead.home-hd{
+    color:#FFF;
+   
+}
+.title {
+    border-bottom: 2px solid #ffc840;
+    margin: 1.5rem 0;
+}
+.button {
+    background: #ffc840;
+    border-color: #000;
+    color: #000;
+}
+.proposal .supports .button-support {
+    background: #ffc840;
+    border-color: #000;
+    color: #000;
+}
+.button.expanded.large{
+    color:#ffc840;
+}
+.button.expanded.large:hover {
+    background-color: #333;
+    border-color: #333;
+} 
+.button.expanded.large.active {
+    background-color: #ffc840;
+    border-color: #333;
+    color:#000 ;
+} 
+a {
+    color: #000;
+}
+a:hover, a:active {
+    text-decoration: none;
+}
+.featured-proposals {
+    background: #ffc840;
+}
+.featured-proposals .supports .button-support {
+    background: #333;
+    color: #ffc840;
+}
+.sdg-goals-index .section-header {
+    background-color: #efe3af;
+
+}
+.more-info-content h3 {
+    color: #000;
 }
